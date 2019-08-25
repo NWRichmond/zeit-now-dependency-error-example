@@ -1,0 +1,18 @@
+{
+  "name": "zeit-now-dependency-error-example",
+  "version": "1.0.0",
+  "description": "A quick example to demonstrate an issue with dependency installs with Zeit Now 2.0",
+  "main": "index.js",
+  "repository": "git@github.com:NWRichmond/zeit-now-dependency-error-example.git",
+  "author": "Nick Richmond",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "puppeteer": "npm:puppeteer-core",
+    "puppeteer-extra": "^2.1.3",
+    "puppeteer-extra-plugin-stealth": "^2.2.2"
+  },
+  "devDependencies": {
+    "dotenv": "^8.1.0"
+  }
+}
