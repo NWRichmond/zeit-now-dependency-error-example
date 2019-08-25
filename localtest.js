@@ -8,7 +8,7 @@ const port = 5555;
 const server = http.createServer(async (req, res) => {
   try {
     const artistAndSong = 'frankie-laine-rawhide';
-    const lyrics = await getThoseLyrics(artistAndSong, true);
+    const lyrics = await getThoseLyrics(artistAndSong, false);
     res.writeHead(200, {'Content-Type': 'text/plain'});
     res.end(lyrics);
     console.log('\nGot the lyrics! 🎵\n'); 
