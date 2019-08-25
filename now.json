@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "env": {
+    "BROWSERLESS_API_KEY": "@browserless_api_key"
+  }
+}
