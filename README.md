@@ -73,7 +73,7 @@ Setting the second argument of `getThoseLyrics()` to `true` in `localtest.js` do
 
 At the time of writing, if you want to use [puppeteer-extra-plugin-stealth](https://github.com/berstend/puppeteer-extra/tree/master/packages/puppeteer-extra-plugin-stealth), I think [Browserless](https://www.browserless.io/) is the only option for deploying with Zeit Now 2.0.
 
-The issue is with node runtime versions. As I noted in [this](https://github.com/berstend/puppeteer-extra/issues/59) GitHub issue, [puppeteer-extra-plugin-stealth](https://github.com/berstend/puppeteer-extra/tree/master/packages/puppeteer-extra-plugin-stealth) package requires a node runtime of ``9.11.2` or greater.
+The issue is with node runtime versions. As I noted in [this](https://github.com/berstend/puppeteer-extra/issues/59) GitHub issue, [puppeteer-extra-plugin-stealth](https://github.com/berstend/puppeteer-extra/tree/master/packages/puppeteer-extra-plugin-stealth) package requires a node runtime of `9.11.2` or greater.
 
 A Zeit blog post ([Serverless Chrome via Puppeteer with Now 2.0](https://zeit.co/blog/serverless-chrome)) used the lightweight chrome binary [chrome-aws-lambda](https://github.com/alixaxel/chrome-aws-lambda) to deploy Puppeteer with Now 2.0, but `chrome-aws-lambda` requires a node runtime of `8.10.x` as there is an [issue](https://github.com/alixaxel/chrome-aws-lambda/issues/37) with running on the `10.x` runtime.
 
