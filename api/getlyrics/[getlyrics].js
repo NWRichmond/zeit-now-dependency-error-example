@@ -6,7 +6,7 @@ module.exports = async (req, res) => {
       query: { getlyrics },
     } = req;
     const artistAndSong = getlyrics;
-    const lyrics = await getThoseLyrics(artistAndSong, true);
+    const lyrics = await getThoseLyrics(artistAndSong, false);
     res.send(lyrics);
     console.log('\nGot the lyrics! 🎵\n');
   } catch (err) {
