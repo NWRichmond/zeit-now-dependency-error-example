@@ -13,7 +13,7 @@ const server = http.createServer(async (req, res) => {
     res.end(lyrics);
     console.log('\nGot the lyrics! 🎵\n');
   } catch (err) {
-    errorMessage = `Error getting lyrics:\n\n${err.message}\n\n`;
+    const errorMessage = `Error getting lyrics:\n\n${err.message}\n\n`;
     console.log(errorMessage);
     res.end(errorMessage);
   }
