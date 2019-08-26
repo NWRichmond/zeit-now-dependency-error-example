@@ -6,14 +6,12 @@ module.exports = async (req, res) => {
       query: { getlyrics },
     } = req;
     const artistAndSong = getlyrics;
-    const lyrics = await getThoseLyrics(artistAndSong, false)
+    const lyrics = await getThoseLyrics(artistAndSong, true);
     res.send(lyrics);
     console.log('\nGot the lyrics! 🎵\n');
   } catch (err) {
-    const errorMessage = `Error fetching lyrics...\n${err.message}`
-    res.send(
-      errorMessage
-    );
+    const errorMessage = `Error fetching lyrics...\n${err.message}`;
+    res.send(errorMessage);
     console.log(errorMessage);
   }
 };
